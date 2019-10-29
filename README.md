@@ -13,3 +13,8 @@ A boilerplate project for React based pluto web client application.
 * [TypeScript](http://www.typescriptlang.org/)
 * [Webpack](https://webpack.js.org/)
 * [Babel](https://babeljs.io/docs/en/)
+
+## Todos
+- [X] Test 'Tree Shaking'
+- [ ] Create Folder Structure
+- [ ] Write comment for some critical options on webpack, package conf files
