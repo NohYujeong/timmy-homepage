@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server",
+    "build": "rimraf dst && webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "sideEffects": false,
@@ -48,6 +50,7 @@
     "@typescript-eslint/eslint-plugin": "^2.6.0",
     "@typescript-eslint/parser": "^2.6.0",
     "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.4",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-react-hooks": "^2.2.0",
@@ -55,6 +58,7 @@
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.6.4",
     "webpack": "^4.41.2",

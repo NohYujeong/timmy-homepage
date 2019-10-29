@@ -1,10 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const path = require('path');
 const babelConfig = require('./babel.config');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.tsx',
   output: {
     path: __dirname + '/dst',
@@ -30,7 +30,12 @@ module.exports = {
       },
     ],
   },
-  plugins: [new HtmlWebpackPlugin({ template: 'src/index.html', inject: 'body' }), new BundleAnalyzerPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({ template: 'src/index.html', inject: 'body' }),
+    new CopyPlugin([
+      { from: 'public/**/*', to: '' },
+    ]),
+  ],
   devServer: {
     contentBase: path.join(__dirname, 'dst'),
     compress: true,
