@@ -19,6 +19,7 @@
     "baseUrl": "src",
     "outDir": "./dst",
   },
+  "files": ["typings/svg.d.ts", "typings/scss.d.ts"],
   "include": [
     "src"
   ]

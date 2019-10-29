@@ -11,6 +11,10 @@ module.exports = {
     filename: '[name].[chunkhash:8].js',
   },
   devtool: 'source-map',
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules']
+  },
   module: {
     rules: [
       {
@@ -28,14 +32,47 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-sprite-loader'
+          },
+          'svg-transform-loader',
+          'svgo-loader',
+        ],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: 'style-loader' },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              localIdentName: '[name]_[local]_[hash:base64:5]',
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => {
+                return [require('postcss-flexbugs-fixes'), require('precss'), require('autoprefixer')];
+              },
+            },
+          },
+          { loader: 'sass-loader' },
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: ['./app/_variables.scss'],
+            },
+          },
+        ],
+      },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({ template: 'src/index.html', inject: 'body' }),
-    new CopyPlugin([
-      { from: 'public/**/*', to: '' },
-    ]),
-  ],
+  plugins: [new HtmlWebpackPlugin({ template: 'src/index.html', inject: 'body' }), new CopyPlugin([{ from: 'public/**/*', to: '' }])],
   devServer: {
     contentBase: path.join(__dirname, 'dst'),
     compress: true,

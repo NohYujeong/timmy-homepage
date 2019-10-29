@@ -1,7 +1,13 @@
-import isMonday from 'date-fns/isMonday';
+import React, { FC } from 'react';
+import ReactDom from 'react-dom';
 
-new Promise(resolve => {
-  setTimeout(resolve, 1000);
-});
+const DemoPage: FC = () => {
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <h2>happy coding!</h2>
+    </div>
+  );
+};
 
-console.log(isMonday(Date.now()));
+ReactDom.render(<DemoPage />, document.getElementById('react-app'));
