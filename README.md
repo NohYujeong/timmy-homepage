@@ -1,11 +1,12 @@
 # Pluto React boilerplate
 A boilerplate project for React based pluto web client application.
 
-## Installation
+## Getting Started
 ```
 > git clone https://github.com/pluto-net/pluto-react-boilerplate.git
 > npm install
-> npx webpack-dev-server
+> npm run build
+> npm start
 ```
 
 ## Specification
@@ -16,5 +17,8 @@ A boilerplate project for React based pluto web client application.
 
 ## Todos
 - [X] Test 'Tree Shaking'
-- [ ] Create Folder Structure
+- [X] Create Folder Structure
+- [ ] Add Router
+- [ ] Compose Demo page with page, component and atoms
+- [ ] HMR
 - [ ] Write comment for some critical options on webpack, package conf files
