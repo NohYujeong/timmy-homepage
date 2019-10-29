@@ -18,7 +18,8 @@ A boilerplate project for React based pluto web client application.
 ## Todos
 - [X] Test 'Tree Shaking'
 - [X] Create Folder Structure
-- [ ] Add Router
-- [ ] Compose Demo page with page, component and atoms
-- [ ] HMR
+- [X] HMR
+- [X] Add Router
+- [ ] Compose application with pages
+- [ ] Compose page with components and atoms
 - [ ] Write comment for some critical options on webpack, package conf files

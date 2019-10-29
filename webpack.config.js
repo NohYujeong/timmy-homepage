@@ -5,7 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.tsx',
+  entry: ['react-hot-loader/patch', './src/index.tsx'],
   output: {
     path: __dirname + '/dst',
     filename: '[name].[hash:8].js',
@@ -13,7 +13,10 @@ module.exports = {
   devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
-    modules: [path.resolve(__dirname, 'src'), 'node_modules']
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    },
   },
   module: {
     rules: [
@@ -36,7 +39,7 @@ module.exports = {
         test: /\.svg$/,
         use: [
           {
-            loader: 'svg-sprite-loader'
+            loader: 'svg-sprite-loader',
           },
           'svg-transform-loader',
           'svgo-loader',
@@ -50,7 +53,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
-              localIdentName: '[name]_[local]_[hash:base64:5]',
+              localsConvention: 'camelCase',
             },
           },
           {
@@ -65,7 +68,7 @@ module.exports = {
           {
             loader: 'sass-resources-loader',
             options: {
-              resources: ['./app/_variables.scss'],
+              resources: ['src/styles/variables.scss'],
             },
           },
         ],
@@ -77,7 +80,7 @@ module.exports = {
     contentBase: path.join(__dirname, 'dst'),
     compress: true,
     host: '0.0.0.0',
-    allowedHosts: ['localhost', 'lvh.me'],
+    allowedHosts: ['localhost'],
     hot: true,
   },
 };
