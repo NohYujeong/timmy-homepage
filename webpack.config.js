@@ -8,7 +8,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     path: __dirname + '/dst',
-    filename: '[name].[chunkhash:8].js',
+    filename: '[name].[hash:8].js',
   },
   devtool: 'source-map',
   resolve: {
@@ -78,5 +78,6 @@ module.exports = {
     compress: true,
     host: '0.0.0.0',
     allowedHosts: ['localhost', 'lvh.me'],
+    hot: true,
   },
 };
