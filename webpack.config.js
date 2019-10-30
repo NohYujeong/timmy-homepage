@@ -82,5 +82,6 @@ module.exports = {
     host: '0.0.0.0',
     allowedHosts: ['localhost'],
     hot: true,
+    historyApiFallback: true,
   },
 };
