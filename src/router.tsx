@@ -6,7 +6,7 @@ const Router: FC = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
       </Switch>
