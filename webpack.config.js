@@ -5,10 +5,11 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: ['react-hot-loader/patch', './src/index.tsx'],
+  entry: ['@babel/polyfill', './src/index.tsx'],
   output: {
     path: __dirname + '/dst',
     filename: '[name].[hash:8].js',
+    publicPath: '/',
   },
   devtool: 'source-map',
   resolve: {
