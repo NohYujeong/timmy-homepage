@@ -55,7 +55,7 @@
     "@typescript-eslint/parser": "^2.6.0",
     "autoprefixer": "^9.7.0",
     "babel-loader": "^8.0.6",
-    "copy-webpack-plugin": "^5.0.4",
+    "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.2.0",
     "daum.maps.d.ts": "github:Musma/daum.maps.d.ts",
     "eslint": "^6.6.0",
