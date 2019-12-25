@@ -14,11 +14,11 @@ interface Question {
 
 const Home: FC = () => {
   const programs: Program[] = [
-    { time: '6:30', title: '입장' },
-    { time: '00:00', title: '미정' },
-    { time: '00:00', title: '미정' },
-    { time: '00:00', title: '미정' },
-    { time: '10:30', title: '마감' },
+    { time: '18:30', title: '입장' },
+    { time: '19:00', title: '마피아 게임' },
+    { time: '20:00', title: '라떼는 말이야' },
+    { time: '21:00', title: '자유 네트워킹' },
+    { time: '22:30', title: '마감' },
   ];
 
   const questions: Question[] = [

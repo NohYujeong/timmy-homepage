@@ -168,10 +168,10 @@ input:focus {
     border-bottom: solid 1px #979797;
     display: flex;
     margin: 0 auto;
+    padding: 0 50px;
   }
 
   .listItem {
-    width: 100px;
     height: 110px;
     font-family: 'Noto Sans KR';
     font-size: 30px;
@@ -183,7 +183,7 @@ input:focus {
   }
 
   .listItem + .listItem {
-    margin-left: 25px;
+    margin-left: 50px;
   }
 
   .oval {
@@ -409,6 +409,7 @@ input:focus {
       border-bottom: solid 1px #979797;
       display: flex;
       margin: 0 auto;
+      padding: 0;
     }
 
     .listItem {
