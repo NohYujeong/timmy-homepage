@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from 'react';
 import s from './home.scss';
-import { Map, Marker, MarkerClusterer, Polyline } from 'react-kakao-maps';
+import { Map, Marker } from 'react-kakao-maps';
 
 interface Program {
   time: string;

@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import React, { FC } from 'react';
-import Home from './pages/home/home';
+import Home from './pages/home';
 
 const Router: FC = () => {
   return (
