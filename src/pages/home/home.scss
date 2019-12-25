@@ -1,0 +1,258 @@
+body {
+  background-color: #191919;
+  color: white;
+}
+
+.mainContainer {
+  padding: 43px 120px;
+}
+
+.titleArea {
+  background-image: url('https://timmy-asset.s3.amazonaws.com/home-img.png');
+  background-repeat: no-repeat;
+  background-position: center 80px;
+
+  .title {
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 1.22;
+    font-family: GillSans;
+  }
+}
+
+.categoryWrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 400px;
+
+  .categoryItem {
+    font-family: Gotham;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 3.67;
+    color: white;
+  }
+}
+
+.timmyArea {
+  margin-top: 436px;
+
+  .title {
+    font-family: GillSans;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+  }
+
+  .contentWrapper {
+    position: relative;
+  }
+
+  .backgroundOval {
+    position: absolute;
+    background: transparent;
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    border: solid 1px #979797;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .context {
+    font-family: NotoSansCJKkr;
+    font-size: 25px;
+    line-height: 2.8;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .timmyList {
+    margin-top: 408px;
+  }
+
+  .guideText {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 5.5;
+    text-align: center;
+  }
+
+  .timmyItemList {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin-top: 120px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .timmyItem {
+    text-align: center;
+    margin-bottom: 80px;
+
+    img {
+      width: 417px;
+      height: 416px;
+      object-fit: contain;
+    }
+  }
+
+  .itemTitle {
+    font-family: NotoSansCJKkr;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 28px;
+  }
+
+  .itemSubTitle {
+    margin-top: 14px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.programArea {
+  margin-top: 436px;
+
+  .title {
+    font-family: NotoSansCJKkr;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+  }
+
+  .listRow {
+    width: 870px;
+    border-bottom: solid 1px #979797;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .listItem {
+    width: 100px;
+    height: 110px;
+    font-family: NotoSansCJKkr;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 3.67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .listItem + .listItem {
+    margin-left: 25px;
+  }
+
+  .oval {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+.qnaArea {
+  margin-top: 436px;
+
+  .title {
+    font-family: NotoSansCJKkr;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+  }
+
+  .questionItem {
+    display: flex;
+    width: 740px;
+    margin: 0 auto;
+  }
+
+  .questionItem + .questionItem {
+    margin-top: 96px;
+  }
+
+  .numberOval {
+    width: 85px;
+    height: 85px;
+    border: solid 1px #979797;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 26px;
+    margin-top: -24px;
+  }
+
+  .question {
+    font-family: NotoSansCJKkr;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .answer {
+    font-family: NotoSansCJKkr;
+    font-size: 30px;
+    line-height: 1.5;
+    max-width: 720px;
+    width: 100%;
+  }
+}
+
+.whereArea {
+  margin-top: 436px;
+
+  .title {
+    font-family: NotoSansCJKkr;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+  }
+
+  .mapContainer {
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    margin-top: 50px;
+  }
+
+  .mapContext {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .categoryItem {
+    display: flex;
+  }
+
+  .categoryItem + .categoryItem {
+    margin-top: 36px;
+  }
+
+  .categoryTitle {
+    font-size: 25px;
+    font-weight: bold;
+    width: 120px;
+  }
+
+  .categoryText {
+    font-family: AppleSDGothicNeo;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 1.72;
+  }
+}

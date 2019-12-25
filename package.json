@@ -1,5 +1,5 @@
 {
-  "name": "pluto-react-boilerplate",
+  "name": "timy-homepage",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -57,6 +57,7 @@
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
+    "daum.maps.d.ts": "github:Musma/daum.maps.d.ts",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-react-hooks": "^2.2.0",
@@ -87,6 +88,7 @@
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-kakao-maps": "github:Musma/react-kakao-maps",
     "react-router-dom": "^5.1.2"
   }
 }
