@@ -77,9 +77,15 @@ const Home: FC = () => {
           HOMECOMING
         </h1>
         <div className={s.categoryWrapper}>
-          <div className={s.categoryItem}>TIMMY</div>
-          <div className={s.categoryItem}>Program</div>
-          <div className={s.categoryItem}>Register</div>
+          <div className={s.categoryItem}>
+            <a href="#timmy">TIMMY</a>
+          </div>
+          <div className={s.categoryItem}>
+            <a href="#program">Program</a>
+          </div>
+          <div className={s.categoryItem}>
+            <a href="https://forms.gle/kTQ9uHR65skfWrqg9">Register</a>
+          </div>
         </div>
       </div>
       <div className={s.timmyArea}>
@@ -103,7 +109,9 @@ const Home: FC = () => {
           </div>
         </div>
         <div className={s.timmyList}>
-          <h1 className={s.title}>역대 운영팀</h1>
+          <h1 className={s.title} id="timmy">
+            역대 운영팀
+          </h1>
           <div className={s.timmyItemList}>
             <div className={s.timmyItem}>
               <img src="https://timmy-asset.s3.amazonaws.com/25.png" alt="25기 운영팀장" />
@@ -140,7 +148,9 @@ const Home: FC = () => {
         </div>
       </div>
       <div className={s.programArea}>
-        <h1 className={s.title}>Program</h1>
+        <h1 className={s.title} id="program">
+          Program
+        </h1>
         <div className={s.programList}>
           {programs.map(p => {
             return (
