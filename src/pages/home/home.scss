@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -38,7 +41,7 @@ input:focus {
     font-size: 90px;
     font-weight: bold;
     line-height: 1.22;
-    font-family: GillSans;
+    font-family: 'Roboto', 'sans-serif';
   }
 }
 
@@ -51,7 +54,7 @@ input:focus {
   margin-top: 400px;
 
   .categoryItem {
-    font-family: Gotham;
+    font-family: 'Roboto', 'sans-serif';
     font-size: 30px;
     font-weight: bold;
     line-height: 3.67;
@@ -67,7 +70,7 @@ input:focus {
   margin-top: 436px;
 
   .title {
-    font-family: GillSans;
+    font-family: 'Roboto', 'sans-serif';
     font-size: 60px;
     font-weight: bold;
     line-height: 1.5;
@@ -93,11 +96,11 @@ input:focus {
   }
 
   .context {
-    font-family: NotoSansCJKkr;
+    font-family: 'Noto Sans KR';
     font-size: 25px;
     line-height: 2.8;
     text-align: center;
-    padding-top: 80px;
+    padding: 80px 0;
   }
 
   .timmyList {
@@ -134,7 +137,7 @@ input:focus {
   }
 
   .itemTitle {
-    font-family: NotoSansCJKkr;
+    font-family: 'Noto Sans KR';
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -152,7 +155,7 @@ input:focus {
   margin-top: 436px;
 
   .title {
-    font-family: NotoSansCJKkr;
+    font-family: 'Noto Sans KR';
     font-size: 60px;
     font-weight: bold;
     line-height: 1.33;
@@ -170,7 +173,7 @@ input:focus {
   .listItem {
     width: 100px;
     height: 110px;
-    font-family: NotoSansCJKkr;
+    font-family: 'Noto Sans KR';
     font-size: 30px;
     font-weight: bold;
     line-height: 3.67;
@@ -195,7 +198,7 @@ input:focus {
   margin-top: 436px;
 
   .title {
-    font-family: NotoSansCJKkr;
+    font-family: 'Noto Sans KR';
     font-size: 60px;
     font-weight: bold;
     line-height: 1.33;
@@ -228,15 +231,15 @@ input:focus {
   }
 
   .question {
-    font-family: NotoSansCJKkr;
+    font-family: 'Noto Sans KR';
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 8px;
   }
 
   .answer {
-    font-family: NotoSansCJKkr;
-    font-size: 30px;
+    font-family: 'Noto Sans KR';
+    font-size: 24px;
     line-height: 1.5;
     max-width: 720px;
     width: 100%;
@@ -247,7 +250,7 @@ input:focus {
   margin-top: 436px;
 
   .title {
-    font-family: NotoSansCJKkr;
+    font-family: 'Noto Sans KR';
     font-size: 60px;
     font-weight: bold;
     line-height: 1.33;
@@ -284,7 +287,7 @@ input:focus {
   }
 
   .categoryText {
-    font-family: AppleSDGothicNeo;
+    font-family: 'Roboto', 'sans-serif';
     font-size: 25px;
     font-weight: bold;
     margin-left: 20px;
@@ -314,7 +317,7 @@ input:focus {
     align-items: center;
 
     .categoryItem {
-      font-family: Gotham;
+      font-family: 'Roboto', 'sans-serif';
       font-size: 16px;
       font-weight: bold;
       line-height: 4.88;
@@ -325,7 +328,7 @@ input:focus {
     margin-top: 152px;
 
     .title {
-      font-family: GillSans;
+      font-family: 'Roboto', 'sans-serif';
       font-size: 20px;
       font-weight: bold;
       line-height: 1.4;
@@ -338,9 +341,9 @@ input:focus {
     }
 
     .context {
-      font-size: 13px;
+      font-size: 12px;
       line-height: 1.57;
-      padding: 40px 0;
+      padding: 50px 0;
     }
 
     .timmyList {
@@ -376,7 +379,7 @@ input:focus {
     }
 
     .itemTitle {
-      font-family: NotoSansCJKkr;
+      font-family: 'Noto Sans KR';
       font-size: 14px;
       font-weight: bold;
       line-height: 2.14;
@@ -394,7 +397,7 @@ input:focus {
     margin-top: 152px;
 
     .title {
-      font-family: GillSans;
+      font-family: 'Roboto', 'sans-serif';
       font-size: 20px;
       font-weight: bold;
       line-height: 1.4;
@@ -409,7 +412,7 @@ input:focus {
     }
 
     .listItem {
-      font-family: NotoSansCJKkr;
+      font-family: 'Noto Sans KR';
       font-size: 15px;
       font-weight: bold;
       line-height: 3.67;
@@ -431,7 +434,7 @@ input:focus {
     margin-top: 152px;
 
     .title {
-      font-family: NotoSansCJKkr;
+      font-family: 'Noto Sans KR';
       font-size: 20px;
       font-weight: bold;
       line-height: 1.4;
@@ -461,19 +464,19 @@ input:focus {
       align-items: center;
       justify-content: center;
       margin-right: 12px;
-      margin-top: -12px;
+      margin-top: -6px;
     }
 
     .question {
-      font-family: NotoSansCJKkr;
+      font-family: 'Noto Sans KR';
       font-size: 16px;
       font-weight: bold;
       margin-bottom: 8px;
     }
 
     .answer {
-      font-family: NotoSansCJKkr;
-      font-size: 16px;
+      font-family: 'Noto Sans KR';
+      font-size: 12px;
       line-height: 1.5;
       max-width: 720px;
       width: 100%;
@@ -484,7 +487,7 @@ input:focus {
     margin-top: 152px;
 
     .title {
-      font-family: NotoSansCJKkr;
+      font-family: 'Noto Sans KR';
       font-size: 20px;
       font-weight: bold;
       line-height: 1.4;
@@ -518,7 +521,7 @@ input:focus {
     }
 
     .categoryText {
-      font-family: AppleSDGothicNeo;
+      font-family: 'Noto Sans KR';
       font-size: 12px;
       font-weight: bold;
       margin-left: 20px;
