@@ -181,11 +181,10 @@ const Home: FC = () => {
         <div className={s.mapContainer}>
           <Map
             options={{
-              center: new daum.maps.LatLng(37.49514, 127.0387729), //지도의 중심좌표.
+              center: new daum.maps.LatLng(37.49514, 127.0387729),
               level: 3,
             }}
           >
-            {/* 그냥 마커는 이렇게 */}
             <Marker
               options={{
                 position: new daum.maps.LatLng(37.49514, 127.0387729),
@@ -199,7 +198,7 @@ const Home: FC = () => {
             <div className={s.categoryText}>서울특별시 강남구 역삼동 790-10 청연빌딩 1층 릿커피앤비어 (Lit)</div>
           </div>
           <div className={s.categoryItem}>
-            <div className={s.categoryTitle}>🚗 교통안내</div>
+            <div className={s.categoryTitle}>🚗 교통</div>
             <div className={s.categoryText}>
               지하철 : 역삼역(2호선) 2번 출구 도보 10분
               <br />
