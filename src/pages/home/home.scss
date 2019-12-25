@@ -28,6 +28,16 @@ input:focus {
   outline: none;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #3f3f3f;
+  color: #1d1d1d;
+  margin-top: 40px;
+}
+
 .mainContainer {
   padding: 43px 120px;
 }
@@ -296,6 +306,10 @@ input:focus {
 }
 
 @media (max-width: 768px) {
+  .footer {
+    height: 60px;
+  }
+
   .mainContainer {
     padding: 24px 28px;
   }
