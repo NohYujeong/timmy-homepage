@@ -15,8 +15,8 @@ interface Question {
 const Home: FC = () => {
   const programs: Program[] = [
     { time: '18:30', title: '입장' },
-    { time: '19:00', title: '마피아 게임' },
-    { time: '20:00', title: '라떼는 말이야' },
+    { time: '19:00', title: 'TIMMY LIVE' },
+    { time: '20:00', title: 'TIMMY AWARDS ' },
     { time: '21:00', title: '자유 네트워킹' },
     { time: '22:30', title: '마감' },
   ];
@@ -33,22 +33,18 @@ const Home: FC = () => {
       ),
     },
     {
-      q: '행사 기획팀에 참여할 수 있나요?',
-      a: (
-        <span>
-          신청폼에 행사 기획 참여, 혹은 따로 문의를 주신다면
-          <br />
-          언제든지 함께 홈커밍 기획에 참여 할 수 있습니다.
-        </span>
-      ),
-    },
-    {
       q: '신청 기간을 놓쳤는데 추가로 신청을 받나요?',
       a: (
         <span>
-          대관 장소 최대 인원수가 채워지지 않는다면
+          결정 못하신 분들이 다수 있다 하여
           <br />
-          추가로 신청을 하실 수 있습니다.
+          신청 못하신 분들을 위해 추가 신청을 받고 있습니다.
+          <br />
+          1월 8일(수) 까지,
+          <br />
+          유현영(010-5006-0804) 로 빠르게 연락주시면
+          <br />
+          신청 진행 도와드리겠습니다.
         </span>
       ),
     },
@@ -145,7 +141,7 @@ const Home: FC = () => {
                 <div className={s.itemSubTitle}>19기 운영팀장</div>
               </div>
             </div>
-            <div className={s.guideText}>* 운영팀장들의 제공된 사진 자료만 사용했습니다.</div>
+            <div className={s.guideText}>* 참여하는 기수의 운영팀장 사진만 사용하였습니다.</div>
           </div>
         </div>
         <div className={s.programArea}>
