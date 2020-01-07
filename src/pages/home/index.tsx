@@ -36,13 +36,13 @@ const Home: FC = () => {
       q: '신청 기간을 놓쳤는데 추가로 신청을 받나요?',
       a: (
         <span>
-          결정 못하신 분들이 다수 있다 하여 신청 못하신 분들을
+          결정 못하신 분들이 다수 있다 하여,
           <br />
-          위해 추가 신청을 받고 있습니다.
+          신청 못하신 분들을 위해 추가 신청을 받고 있습니다.
           <br />
-          1월 8일(수) 까지, 유현영
+          1월 8일(수) 까지, 유현영(010-5006-0804) 로
           <br />
-          (010-5006-0804) 로 빠르게 연락주시면 신청 진행 도와드리겠습니다.
+          빠르게 연락주시면 신청 진행 도와드리겠습니다.
         </span>
       ),
     },
@@ -73,7 +73,7 @@ const Home: FC = () => {
               <a href="#program">Program</a>
             </div>
             <div className={s.categoryItem}>
-              <a href="https://forms.gle/kTQ9uHR65skfWrqg9">Register</a>
+              <a href="#where">Where</a>
             </div>
           </div>
         </div>
@@ -176,7 +176,9 @@ const Home: FC = () => {
           </div>
         </div>
         <div className={s.whereArea}>
-          <h1 className={s.title}>Where?</h1>
+          <h1 className={s.title} id="where">
+            Where?
+          </h1>
 
           <div className={s.mapContainer}>
             <Map
