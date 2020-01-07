@@ -86,8 +86,10 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "@types/react-helmet": "^5.0.15",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
     "react-kakao-maps": "github:Musma/react-kakao-maps",
     "react-router-dom": "^5.1.2"
   }
